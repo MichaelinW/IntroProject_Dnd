@@ -3,12 +3,12 @@
 <%= page_entries_info @characters %>
 <%= paginate @characters %>
 
-<ul>
+<div class="row">
   <% @characters.each do |c| %>
-    <li>
+    <div class="col-6 col-sm-4">
       <a href="/characters/<%= c.id %>">
         <%= c.charName %>
       </a>
-    </li>
+    </div>
   <% end %>
-</ul>
+</div>

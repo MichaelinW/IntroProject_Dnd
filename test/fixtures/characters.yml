@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  charName: MyString
+  charGender: MyString
+  charLvl: MyString
+  dndclass: one
+  race: one
+  background: one
+  str: 1
+  dex: 1
+  con: 1
+  wis: 1
+  int: 1
+  cha: 1
+
+two:
+  charName: MyString
+  charGender: MyString
+  charLvl: MyString
+  dndclass: two
+  race: two
+  background: two
+  str: 1
+  dex: 1
+  con: 1
+  wis: 1
+  int: 1
+  cha: 1

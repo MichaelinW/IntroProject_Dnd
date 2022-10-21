@@ -1,0 +1,14 @@
+<h1>List of Characters</h1>
+
+<%= page_entries_info @characters %>
+<%= paginate @characters %>
+
+<ul>
+  <% @characters.each do |c| %>
+    <li>
+      <a href="/characters/<%= c.id %>">
+        <%= c.charName %>
+      </a>
+    </li>
+  <% end %>
+</ul>

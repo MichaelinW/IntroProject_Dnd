@@ -1,0 +1,11 @@
+<h1>List of Races</h1>
+
+<ul>
+  <% @races.each do |r| %>
+    <li>
+      <a href="/races/<%= r.id %>">
+        <%= r.raceName %>
+      </a>
+    </li>
+  <% end %>
+</ul>

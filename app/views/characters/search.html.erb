@@ -1,0 +1,11 @@
+<p class="mb-5">
+ Found <%= pluralize(@characters.count, 'Character') %>  found when searching for: <%= params[:keywords] %>
+</p>
+
+<ul>
+  <% @characters.each do |c| %>
+    <li>
+      <%= link_to c.charName, c %>
+    </li>
+  <% end %>
+</ul>

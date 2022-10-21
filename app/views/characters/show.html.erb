@@ -1,0 +1,38 @@
+<h1><%= @character.charName %></h1>
+
+<table class="table">
+  <tr>
+  <td>Gender : </td>
+  <td><%= @character.charGender %></td>
+  </tr>
+
+  <tr>
+  <td>Level : </td>
+  <td><%= @character.charLvl %></td>
+  </tr>
+
+  <tr>
+  <td>Character Class : </td>
+  <td><a href="/dndclasses/<%= @character.dndclass_id %>"><%= @character.dndclass.className %></a></td>
+  </tr>
+
+  <tr>
+  <td>Character Race : </td>
+  <td><a href="/races/<%= @character.race_id %>"><%= @character.race.raceName %></a></td>
+  </tr>
+
+  <tr>
+  <td>Character background : </td>
+  <td><a href="/backgrounds/<%= @character.background_id %>"><%= @character.background.bgName %></a></td>
+  </tr>
+</table>
+<table class="table">
+  <tr>
+  <td>Strength : <%= @character.str %></td>
+  <td>Dexterity : <%= @character.dex %></td>
+  <td>Constitution : <%= @character.con %></td>
+  <td>Intelligence : <%= @character.int %></td>
+  <td>Wisdom : <%= @character.wis %></td>
+  <td>Charisma : <%= @character.cha %></td>
+  </tr>
+</table>

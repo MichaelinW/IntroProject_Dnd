@@ -1,0 +1,14 @@
+<h1><%= @race.raceName %></h1>
+
+<p>Description: <%= @race.raceDesc %></p>
+
+<p>List of characters belong to this race</p>
+<ul>
+  <% @race.characters.each do |c| %>
+    <li>
+      <a href="/characters/<%= c.id %>">
+        <%= c.charName %>
+      </a>
+    </li>
+  <% end %>
+</ul>

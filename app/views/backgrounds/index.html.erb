@@ -1,0 +1,11 @@
+<h1>List of Backgrounds</h1>
+
+<ul>
+  <% @backgrounds.each do |bg| %>
+    <li>
+      <a href="/backgrounds/<%= bg.id %>">
+        <%= bg.bgName %>
+      </a>
+    </li>
+  <% end %>
+</ul>

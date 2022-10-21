@@ -1,0 +1,26 @@
+<h1><%= @dndclass.className %></h1>
+
+<table>
+  <tr>
+  <td>Hit Dice</td>
+  <td><%= @dndclass.classHD %></td>
+  </tr>
+
+  <tr>
+  <td>Proficiency Saving</td>
+  <td><%= @dndclass.classProfSav %></td>
+  </tr>
+</table>
+<p>Description : <%= @dndclass.classDesc %></p>
+
+<p>list of characters belong to this class</p>
+<ul>
+  <% @dndclass.characters.each do |c| %>
+    <li>
+      <a href="/characters/<%= c.id %>">
+        <%= c.charName %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+

@@ -1,0 +1,11 @@
+<h1>List of Classes</h1>
+
+<ul>
+  <% @dndclasses.each do |dc| %>
+    <li>
+      <a href="/dndclasses/<%= dc.id %>">
+        <%= dc.className %>
+      </a>
+    </li>
+  <% end %>
+</ul>
